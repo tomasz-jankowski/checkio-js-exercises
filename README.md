@@ -1,2 +1,2 @@
 # checkio-js-exercises
-Exercises from <js.checkio.org>.
+https://js.checkio.org exercises solutions.
