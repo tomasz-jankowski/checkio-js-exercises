@@ -1,2 +1,2 @@
 # checkio-js-exercises
-Exercises from js.checkio.org
+Exercises from <js.checkio.org>.
