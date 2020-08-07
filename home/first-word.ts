@@ -17,4 +17,11 @@ Example:
     firstWord("greetings, friends") == "greetings"
 */
 
-var firstWord = (str: string): string => str.split('.').join(' ').split(',').join(' ').split(' ').filter(p => p !== '')[0];
+var firstWord = (str: string): string =>
+    str
+        .split('.')
+        .join(' ')
+        .split(',')
+        .join(' ')
+        .split(' ')
+        .filter(p => p !== '')[0];

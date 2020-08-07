@@ -18,4 +18,7 @@ Example:
     removeAllBefore([], 0) == []
 */
 
-var removeAllBefore = (values: number[], b: number): number[] => (values === []) ? [] : (values.indexOf(b) === -1) ? values : values.splice(values.indexOf(b));
+var removeAllBefore = (values: number[], b: number): number[] => 
+    (values === []) ? [] :
+        (values.indexOf(b) === -1) ? values :
+            values.splice(values.indexOf(b));
