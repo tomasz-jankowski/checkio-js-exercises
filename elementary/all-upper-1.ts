@@ -13,4 +13,4 @@ Example:
     isAllUpper('') == true
 */
 
-var isAllUpper = (text: string): boolean => (text === text.toUpperCase()) ? true : false;
+var isAllUpper = (text: string): boolean => text === text.toUpperCase();

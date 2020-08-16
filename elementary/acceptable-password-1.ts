@@ -15,4 +15,4 @@ Example:
     isAcceptablePassword('ashort') == false
 */
 
-var isAcceptablePassword = (password: string): boolean => (password.length > 6) ? true : false;
+var isAcceptablePassword = (password: string): boolean => password.length > 6;

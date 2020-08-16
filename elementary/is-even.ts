@@ -12,4 +12,4 @@ Example:
     isEven(0) == true
 */
 
-var isEven = (num: number): boolean => (num % 2 === 0) ? true : false;
+var isEven = (num: number): boolean => num % 2 === 0;
