@@ -26,12 +26,17 @@ Example:
     wordsOrder('',                 ['world', 'here']) == false
 */
 
-function wordsOrder(text: string, arr: string[]): boolean {
-    if(arr.every(elem => text.includes(elem))) {
-        for (let i = 1; i < arr.length; i++) {
-            if(text.indexOf(arr[i]) > text.indexOf(arr[i-1]) || arr.length === 1)
-                return true;
-        }   
+function wordsOrder(text: string, arr: string[]): any {
+    let arrFromText: string[] = text.split(' ');
+    let indexes: number[] = [];
+    // Check if text contains every array element 
+    // @ts-ignore property 'includes' does not exist on type 'string[]'
+    if (arr.every(r => arrFromText.includes(r))) {
+        // Check if all array elements are unique
+        if (arr.every(r => arr.indexOf(r) === arr.lastIndexOf(r))) {
+            arr.forEach(a => indexes.push(arrFromText.indexOf(a)));
+            return indexes.every((v, i, a) => !i || a[i-1] <= v)
+        }
     }
     return false;
 }
